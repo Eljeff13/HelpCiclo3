@@ -50,7 +50,8 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<optional>true</optional>
+			<optional>true </optional>
+				<?m2e ignore?>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
