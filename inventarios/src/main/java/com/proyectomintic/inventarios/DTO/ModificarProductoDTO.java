@@ -1,7 +1,8 @@
 package com.proyectomintic.inventarios.DTO;
 
+public class ModificarProductoDTO {
 
-public class CreacionProductoDTO {
+	private Long idProducto;
 	
 	private String nombreProducto;
 	
@@ -15,19 +16,16 @@ public class CreacionProductoDTO {
 	
 	private Boolean disponible;
 	
-	public CreacionProductoDTO() {
+	public ModificarProductoDTO() {
 		
 	}
-	
-	public CreacionProductoDTO(String nombreProducto, Double precio, String proveedor, String categoria,
-			String descripcion, Boolean disponible) {
-		super();
-		this.nombreProducto = nombreProducto;
-		this.precio = precio;
-		this.proveedor = proveedor;
-		this.categoria = categoria;
-		this.descripcion = descripcion;
-		this.disponible = disponible;
+
+	public Long getIdProducto() {
+		return idProducto;
+	}
+
+	public void setIdProducto(Long idProducto) {
+		this.idProducto = idProducto;
 	}
 
 	public String getNombreProducto() {
@@ -77,5 +75,6 @@ public class CreacionProductoDTO {
 	public void setDisponible(Boolean disponible) {
 		this.disponible = disponible;
 	}
-		
+	
+	
 }
