@@ -4,9 +4,11 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.proyectomintic.inventarios.DTO.CreacionProductoDTO;
 import com.proyectomintic.inventarios.models.Producto;
 import com.proyectomintic.inventarios.services.ProductoService;
 
@@ -23,6 +25,9 @@ public class ProductoController {
 		return productoService.listarProductos();
 	}
 	
-	
+	@PostMapping("/crear")
+	public String crearProducto(CreacionProductoDTO request) {
+		return productoService.crearProducto(request);
+	}
 	
 }
