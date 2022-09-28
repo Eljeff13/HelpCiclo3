@@ -62,6 +62,7 @@ public class UsuarioService {
 		}
 		
 	public String eliminarUsuario(Long idUsuario) {
+		
 		try {
 			Optional<Usuario> usuarioEliminar = usuarioRepository.findById(idUsuario);
 			if(usuarioEliminar.isPresent()) {
