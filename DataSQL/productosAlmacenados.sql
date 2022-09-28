@@ -1,0 +1,5 @@
+[{"idProducto":1,"nombreProducto":"zanahoria","precio":5000.0,"proveedor":"embutidosfrescos","categoria":"vegetales","descripcion":"vegetal fresco","disponible":true},
+{"idProducto":2,"nombreProducto":"lechuga","precio":7000.0,"proveedor":"embutidosfrescos","categoria":"vegetales","descripcion":"vegetales frescos","disponible":true},
+{"idProducto":3,"nombreProducto":"pimiento","precio":9000.0,"proveedor":"embutidosfrescos","categoria":"vegetales","descripcion":"vegetales frescas","disponible":true},
+{"idProducto":4,"nombreProducto":"aguacate","precio":3900.0,"proveedor":"embutidosfrescos","categoria":"vegetales","descripcion":"vegetales frescos","disponible":true},
+{"idProducto":5,"nombreProducto":"tomate","precio":3000.0,"proveedor":"embutidosfrescos","categoria":"vegetales","descripcion":"vegetales frescas","disponible":true}]
