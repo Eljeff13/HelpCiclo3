@@ -19,7 +19,6 @@ public class UsuarioService {
 	@Autowired
 	private UsuarioRepository usuarioRepository;
 	
-	
 	public List<Usuario> listarUsuario(){
 		
 		return usuarioRepository.findAll();
@@ -42,6 +41,7 @@ public class UsuarioService {
 			return "Ha ocurrido un error en la creacion del usuario";
 		}
 	}
+	
 	public String modificacionUsuario(ModificarUsuarioDTO info) {
 			
 		Usuario nuevaModificacion = new Usuario();

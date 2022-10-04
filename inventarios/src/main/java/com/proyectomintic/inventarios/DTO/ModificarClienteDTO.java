@@ -1,42 +1,20 @@
-package com.proyectomintic.inventarios.models;
+package com.proyectomintic.inventarios.DTO;
 
+public class ModificarClienteDTO {
 
-import java.io.Serializable;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-
-@Entity
-@Table(name="CLIENTES")
-public class Clientes implements Serializable {
-
-	private static final long serialVersionUID = 1L;
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="cedula")
 	private Long cedula;
-	
-	@Column(name="nombreCliente", length = 45, nullable = false)
+
 	private String nombreCliente;
-	
-	@Column(name="apellidoCliente", nullable = false)
+
 	private String apellidoCliente;
-	
-	@Column(name="email", nullable = false)
+
 	private String email ;
 	
-	@Column(name="direccion", nullable = false)
 	private String direccion;
 	
-	@Column(name="telefono", nullable = false)
 	private Integer telefono;
 	
-	public Clientes() {
+	public ModificarClienteDTO() {
 		
 	}
 
@@ -87,6 +65,5 @@ public class Clientes implements Serializable {
 	public void setTelefono(Integer puntos) {
 		this.telefono = puntos;
 	}
-	
 	
 }
