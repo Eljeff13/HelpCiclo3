@@ -16,7 +16,15 @@ public class CreacionFacturaDTO {
 		
 	}
 
-	public Date getFecha() {
+	public CreacionFacturaDTO(Date fecha, Double total, String username, Long cedula) {
+        super();
+        this.fecha = fecha;
+        this.total = total;
+        this.username = username;
+        this.cedula = cedula;
+    }
+
+    public Date getFecha() {
 		return fecha;
 	}
 

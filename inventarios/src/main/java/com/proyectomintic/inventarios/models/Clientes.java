@@ -40,7 +40,18 @@ public class Clientes implements Serializable {
 		
 	}
 
-	public Long getCedula() {
+	public Clientes(Long cedula, String nombreCliente, String apellidoCliente, String email, String direccion,
+            Integer telefono) {
+        super();
+        this.cedula = cedula;
+        this.nombreCliente = nombreCliente;
+        this.apellidoCliente = apellidoCliente;
+        this.email = email;
+        this.direccion = direccion;
+        this.telefono = telefono;
+    }
+
+    public Long getCedula() {
 		return cedula;
 	}
 

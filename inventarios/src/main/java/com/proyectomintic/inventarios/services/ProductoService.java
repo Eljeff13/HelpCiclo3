@@ -21,7 +21,7 @@ public class ProductoService {
 	
 	public List<Producto> listarProductos() {
 		List<Producto> aux= (List<Producto>) productoRepository.findAll();
-		System.out.println(aux);
+	
 		for(Producto x:aux) {
 			System.out.println(x.getNombreProducto());
 		}
@@ -39,13 +39,7 @@ public class ProductoService {
 		nuevoProducto.setCategoria(info.getCategoria());
 		nuevoProducto.setDescripcion(info.getDescripcion());
 		nuevoProducto.setDisponible(info.getDisponible());
-		
-		System.out.println(info.getNombreProducto());
-		System.out.println(info.getPrecio());
-		System.out.println(info.getProveedor());
-		System.out.println(info.getCategoria());
-		System.out.println(info.getDescripcion());
-		System.out.println(info.getDisponible());
+
 		
 		try {
 			productoRepository.save(nuevoProducto);

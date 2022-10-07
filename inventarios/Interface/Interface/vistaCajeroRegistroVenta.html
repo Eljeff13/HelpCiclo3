@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Codigo para utilizar bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Fin de la instalacion de bootstrap-->
+
+    <!-- Icono que aparece en la pestaña del navegador -->
+    <link rel="Shortcut Icon" href="img/icono_tienda.png" type="image/x-icon" />
+    <!--Fin que aparece en la pestaña del navegador -->
+
+    <link rel="stylesheet" href="css/cajero.css">
+    <title>Registro de venta</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3  col-xl-2">
+
+                
+                <!-- As a heading -->
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1 mb-5">
+                        <img src="img/icono_tienda.png" alt="" >
+                        Helpcilo3
+                    </span>
+                    </div>
+                </nav>    
+                 <!-- As a link -->
+                 <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid mb-2">
+                    <a class="navbar-brand" href="vistaCajeroBusquedaUsuario.html">Registrar venta</a>
+                    </div>
+
+                    <div class="container-fluid">
+                    <a class="navbar-brand" href="vistaCajeroRegistroCliente.html">Registrar cliente</a>
+                    </div>
+
+                    
+
+                    
+                </nav>    
+
+                    <div class="container-fluid mb-2">
+                    <a class="navbar-brand text-danger " href="login.html ">Cerrar sesión</a>
+                    </div>
+            </div>
+
+            <div class="col-sm-12 col-md-9 col-lg-9  col-xl-10 bg-warning text-end pb-5">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
+                    <div class="container-fluid">
+                        <div class="col accordion-body justify-content-end text-light">
+                            Usuario <img src="img/user-icon.png" alt="Icono de usuario" width="45" >
+                        </div>
+                        
+                        
+                    </div>
+                  </nav>
+                <div class="row">
+                    <div class="container w-75 bg-info mt-1 rounded shadow pb-5">
+                        <div class="row text-start">
+                            
+                            <div class="col p-5 rounded-end" >
+                                
+                                <h2 class="fw-bold text-start py-5 text-light ">Registro de venta</h2>
+                                    <!--Login-->
+                                    <form action="#">
+                                        <div class="mb-4">
+                                            <label for="inputUsuarioConsulta" class="form-label text-light fw-bold">Item</label>
+                                            <input type="text" class="form-control" name="inputUsuarioConsulta" id="inputUsuarioConsulta" placeholder="Consulte por item" required>
+                                        </div>
+                                        
+                                        <div class="mb-4">
+                                            <label for="cantidad" class="form-label text-light fw-bold">Cantidad</label>
+                                            <input type="number"  class="form-control " id="cantidad" >
+                                            <table class="table custom-table">                                                                                    
+                                                <thead>
+                                                    <tr>                                                                                                                                                   
+                                                      <th scope="col">Precio</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <tr scope="row"> 
+                                                      <td id="precioProducto">$1500</td>
+                                                    </tr>
+                                                  </tbody>
+            
+                                                  
+                                                  <thead>
+                                                    <tr>                                                                                                                                                   
+                                                      <th scope="col">Total Producto</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <tr scope="row"> 
+                                                      <td id="precioProducto">$1750</td>
+                                                    </tr>
+                                                  </tbody>
+
+                                                  <thead>
+                                                    <tr>                                                                                                                                                   
+                                                      <th scope="col">Total Venta</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <tr scope="row"> 
+                                                      <td id="precioProducto">$1750</td>
+                                                    </tr>
+                                                  </tbody>
+                                              </table>
+                                        </div>
+                                        
+                                        
+                                    </form>
+                            </div>
+
+
+                            <div class="col d-flex align-items-center   rounded">
+                                <table class="table custom-table">                                                                                    
+                                    <thead>
+                                        <tr>                                                                                                                                                   
+                                          <th scope="col text" class="">Descripcion del producto</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr scope="row"> 
+                                          <td id="precioProducto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsam perferendis quod eius explicabo quaerat natus non minima! Deserunt, doloribus quas. Inventore autem tempora, atque iste officia magni praesentium libero!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum molestiae eligendi nam placeat unde! Ea harum in, consequatur reiciendis deserunt ut velit aspernatur, officia fugiat corporis voluptatibus nobis ratione inventore!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sunt neque mollitia quos earum sed eveniet ad labore excepturi repellat iste, fugit, voluptatem enim possimus laudantium! Inventore quod excepturi perferendis.</td>
+                                        </tr>
+                                      </tbody>
+                                  </table>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-success  mt-2" >Guardar</button>
+                            </div>
+                            <div class="d-grid">
+                                <button type="button" class="btn mt-2" ><a href="vistaCajeroBusquedaUsuario.html" class="list-group-item bg-danger border-danger">Cancelar</a></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <div class="row">
+        <div class="col-8 bg-warning text-end pb-5 pt-5 border border-5 border-light ps-5 pe-5">
+            <h2 class="fw-bold text-start py-5 text-light ">Factura</h2>
+            <div class="table-responsive bg-light">
+                <table class="table table-striped table-sm">
+                  <thead>
+                    <tr>
+                      <th scope="col">Id detalle</th>
+                      <th scope="col">Cantidad</th>
+                      <th scope="col">Precio</th>
+                      <th scope="col">Producto</th>
+                      <th scope="col">Subtotal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>ejemplo</td>
+                      <td>ejemplo</td>
+                      <td>ejemplo</td>
+                      <td>ejemplo</td>
+                      <td>ejemplo</td>
+                    </tr>
+                    <tr>
+                        <td>ejemplo</td>
+                        <td>ejemplo</td>
+                        <td>ejemplo</td>
+                        <td>ejemplo</td>
+                        <td>ejemplo</td>
+                    </tr>
+                    <tr>
+                        <td>ejemplo</td>
+                        <td>ejemplo</td>
+                        <td>ejemplo</td>
+                        <td>ejemplo</td>
+                        <td>ejemplo</td>
+                    </tr>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+           
+        </div>
+        <div class="col-4 bg-warning text-end pb-5 pt-5 border border-5 border-light ps-5 pe-5">
+            <h2 class="fw-bold text-start py-5 text-light ">Factura</h2>
+            <div class="table-responsive bg-light">
+                <table class="table table-striped table-sm">
+                  <thead>
+                    <tr>
+                      <th scope="col"># factura</th>
+                      <th scope="col">Fecha</th>
+                      <th scope="col">Cajero</th>
+                      <th scope="col">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>ejemplo</td>
+                      <td>ejemplo</td>
+                      <td>ejemplo</td>
+                      <td>ejemplo</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-success  mt-2" >Guardar</button>
+            </div>
+            <div class="d-grid">
+                <button type="button" class="btn mt-2" ><a href="vistaCajeroBusquedaUsuario.html" class="list-group-item bg-danger border-danger">Cancelar</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#"></use></svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-muted">© 2022 Mintic, Grupo 2</span>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>

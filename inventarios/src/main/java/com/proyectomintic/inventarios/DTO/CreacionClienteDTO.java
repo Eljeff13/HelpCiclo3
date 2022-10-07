@@ -16,7 +16,17 @@ public class CreacionClienteDTO {
 		
 	}
 
-	public String getNombreCliente() {
+	public CreacionClienteDTO(String nombreCliente, String apellidoCliente, String email, String direccion,
+            Integer telefono) {
+        super();
+        this.nombreCliente = nombreCliente;
+        this.apellidoCliente = apellidoCliente;
+        this.email = email;
+        this.direccion = direccion;
+        this.telefono = telefono;
+    }
+
+    public String getNombreCliente() {
 		return nombreCliente;
 	}
 

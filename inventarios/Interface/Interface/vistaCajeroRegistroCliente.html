@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Codigo para utilizar bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Fin de la instalacion de bootstrap-->
+
+    <!-- Icono que aparece en la pestaña del navegador -->
+    <link rel="Shortcut Icon" href="img/icono_tienda.png" type="image/x-icon" />
+    <!--Fin que aparece en la pestaña del navegador -->
+
+    <link rel="stylesheet" href="css/cajero.css">
+    <title>Registro usuario</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3  col-xl-2">
+
+                
+                <!-- As a heading -->
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1 mb-5">
+                        <img src="img/icono_tienda.png" alt="" >
+                        Helpcilo3
+                    </span>
+                    </div>
+                </nav>    
+                 <!-- As a link -->
+                 <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid mb-2">
+                        <a class="navbar-brand" href="vistaCajeroBusquedaUsuario.html">Registrar venta</a>
+                        </div>
+    
+                        <div class="container-fluid">
+                        <a class="navbar-brand" href="vistaCajeroRegistroCliente.html">Registrar cliente</a>
+                        </div>
+
+                    
+
+                    
+                </nav>    
+
+                    <div class="container-fluid mb-2">
+                    <a class="navbar-brand text-danger " href="login.html ">Cerrar sesión</a>
+                    </div>
+            </div>
+
+            <div class="col-sm-12 col-md-9 col-lg-9  col-xl-10 bg-warning text-end pb-5">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
+                    <div class="container-fluid">
+                        <div class="col accordion-body justify-content-end text-light">
+                            Usuario <img src="img/user-icon.png" alt="Icono de usuario" width="45" >
+                        </div>
+                        
+                        
+                    </div>
+                  </nav>
+                <div class="row">
+                    <div class="container w-75 bg-info mt-1 rounded shadow pb-5">
+                        <div class="row text-start">
+                            
+                            <div class="container">
+                                <main>
+                                  <div class="py-5 text-center">
+                                    <h2>Registro de nuevo usuario</h2>
+                               
+                                  </div>
+                              
+                                  <div class="row">
+                                    <div class="col-2"></div>
+                                    <div class="col-8">
+                                      <h4 class="mb-3">Datos del cliente</h4>
+                                      <form class="needs-validation" novalidate>
+                                        <div class="row g-3">
+                                          <div class="col-sm-6">
+                                            <label for="nombre" class="form-label">Nombre</label>
+                                            <input type="text" class="form-control" id="nombre" placeholder="" value="" required>
+                                            <div class="invalid-feedback">
+                                              El nombre es obligatorio.
+                                            </div>
+                                          </div>
+                              
+                                          <div class="col-sm-6">
+                                            <label for="apellido" class="form-label">Apellido</label>
+                                            <input type="text" class="form-control" id="apellido" placeholder="" value="" required>
+                                            <div class="invalid-feedback">
+                                              El apellido es obligatorio.
+                                            </div>
+                                          </div>
+                              
+                                          <div class="col-12">
+                                            <label for="cedula" class="form-label">Cedula</label>
+                                            <div class="input-group has-validation">
+                                              <span class="input-group-text">CC</span>
+                                              <input type="text" class="form-control" id="cedula" placeholder="" required>
+                                            <div class="invalid-feedback">
+                                                su cedula es obligatoria.
+                                              </div>
+                                            </div>
+                                          </div>
+                              
+                                          <div class="col-12">
+                                            <label for="email" class="form-label">Correo electronico</label>
+                                            <input type="email" class="form-control" id="email" placeholder="nombre.apellido@gmail.com" required>
+                                            <div class="invalid-feedback">
+                                              Por favor introduzca un correo, si no tiene puede rellenar el campo con notiene@notiene.com
+                                            </div>
+                                          </div>
+                              
+                                          <div class="col-12">
+                                            <label for="telefono" class="form-label">Teléfono</label>
+                                            <input type="number" class="form-control" id="telefono" placeholder="305 457854" required>
+                                            <div class="invalid-feedback">
+                                              Por favor introduzca su telefono.
+                                            </div>
+                                          </div>
+                              
+                                          <div class="col-12">
+                                            <label for="direccion" class="form-label">Dirección<span class="text-muted">(Opcional)</span></label>
+                                            <input type="text" class="form-control" id="direccion" placeholder="">
+                                          </div>
+                              
+                                          
+                              
+                                        <hr class="my-4">
+                              
+
+                                      </form>
+                                    </div>
+                                  </div>
+                                  <div class="col-2"></div>
+                                </main>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn mt-2" ><a href="vistaCajeroBusquedaUsuario.html" class="list-group-item bg-success  border-success">Guardar</a></button>
+                        </div>
+                        <div class="d-grid">
+                            <button type="button" class="btn mt-2" ><a href="vistaCajeroBusquedaUsuario.html" class="list-group-item bg-danger border-danger">Cancelar</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">© 2022 Mintic, Grupo 2</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+        </footer>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>

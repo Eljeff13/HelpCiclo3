@@ -37,7 +37,16 @@ public class Factura implements Serializable {
 		
 	}
 
-	public Long getIdFactura() {
+	public Factura(Long idFactura, Date fecha, Double total, String username, Long cedula) {
+        super();
+        this.idFactura = idFactura;
+        this.fecha = fecha;
+        this.total = total;
+        this.username = username;
+        this.cedula = cedula;
+    }
+
+    public Long getIdFactura() {
 		return idFactura;
 	}
 

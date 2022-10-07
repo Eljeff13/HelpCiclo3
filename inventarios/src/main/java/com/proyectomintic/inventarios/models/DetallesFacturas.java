@@ -38,7 +38,18 @@ public class DetallesFacturas implements Serializable {
 		
 	}
 
-	public long getIddetalle() {
+	public DetallesFacturas(Long iddetalle, Integer cantidad, Double precio, Double subtotal, Long idProducto,
+            Long idFactura) {
+        super();
+        this.iddetalle = iddetalle;
+        this.cantidad = cantidad;
+        this.precio = precio;
+        this.subtotal = subtotal;
+        this.idProducto = idProducto;
+        this.idFactura = idFactura;
+    }
+
+    public long getIddetalle() {
 		return iddetalle;
 	}
 

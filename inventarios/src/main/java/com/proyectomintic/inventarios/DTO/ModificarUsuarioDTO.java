@@ -16,7 +16,17 @@ public class ModificarUsuarioDTO {
 		
 	}
 
-	public String getUsername() {
+	public ModificarUsuarioDTO(String username, String nombreUsuario, String apellidoUsuario, String contraseña,
+            String rol) {
+        super();
+        this.username = username;
+        this.nombreUsuario = nombreUsuario;
+        this.apellidoUsuario = apellidoUsuario;
+        this.contraseña = contraseña;
+        this.rol = rol;
+    }
+
+    public String getUsername() {
 		return username;
 	}
 

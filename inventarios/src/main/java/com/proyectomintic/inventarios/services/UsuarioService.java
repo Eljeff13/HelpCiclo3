@@ -24,14 +24,14 @@ public class UsuarioService {
 		return usuarioRepository.findAll();
 	}
 	
-	public String crearUsuario(CreacionUsuarioDTO info) {
+	public String crearUsuarioPorDTO(CreacionUsuarioDTO usuario) {
 		
 		Usuario nuevoUsuario = new Usuario();
-		nuevoUsuario.setUsername(info.getUsername());
-		nuevoUsuario.setUsername(info.getContraseña());
-		nuevoUsuario.setUsername(info.getNombreUsuario());
-		nuevoUsuario.setUsername(info.getApellidoUsuario());
-		nuevoUsuario.setUsername(info.getRol());	
+		nuevoUsuario.setUsername(usuario.getUsername());
+		nuevoUsuario.setUsername(usuario.getContraseña());
+		nuevoUsuario.setUsername(usuario.getNombreUsuario());
+		nuevoUsuario.setUsername(usuario.getApellidoUsuario());
+		nuevoUsuario.setUsername(usuario.getRol());	
 		
 		try {
 			usuarioRepository.save(nuevoUsuario);
@@ -41,6 +41,7 @@ public class UsuarioService {
 			return "Ha ocurrido un error en la creacion del usuario";
 		}
 	}
+	
 	
 	public String modificacionUsuario(ModificarUsuarioDTO info) {
 			
@@ -78,6 +79,11 @@ public class UsuarioService {
 			}
 	
 		}
+
+    public void crearUsuario(Usuario usuario) {
+        usuarioRepository.save(usuario);
+     
+    }
 	
 }
 

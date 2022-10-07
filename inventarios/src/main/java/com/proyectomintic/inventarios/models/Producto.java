@@ -41,7 +41,19 @@ public class Producto implements Serializable {
 		
 	}
 
-	public Long getIdProducto() {
+	public Producto(Long idProducto, String nombreProducto, Double precio, String proveedor, String categoria,
+            String descripcion, Boolean disponible) {
+        super();
+        this.idProducto = idProducto;
+        this.nombreProducto = nombreProducto;
+        this.precio = precio;
+        this.proveedor = proveedor;
+        this.categoria = categoria;
+        this.descripcion = descripcion;
+        this.disponible = disponible;
+    }
+
+    public Long getIdProducto() {
 		return idProducto;
 	}
 

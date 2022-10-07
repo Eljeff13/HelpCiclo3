@@ -18,7 +18,17 @@ public class CreacionUsuarioDTO {
 		
 	}
 
-	public String getUsername() {
+	public CreacionUsuarioDTO(String username, String nombreUsuario, String apellidoUsuario, String contraseña,
+            String rol) {
+        super();
+        this.username = username;
+        this.nombreUsuario = nombreUsuario;
+        this.apellidoUsuario = apellidoUsuario;
+        this.contraseña = contraseña;
+        this.rol = rol;
+    }
+
+    public String getUsername() {
 		return username;
 	}
 

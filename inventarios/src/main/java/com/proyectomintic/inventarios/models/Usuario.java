@@ -40,7 +40,18 @@ public class Usuario implements Serializable {
 		
 	}
 	
-	public Long getIdusuario() {
+	public Usuario(Long idusuario, String username, String nombreUsuario, String apellidoUsuario, String contraseña,
+            String rol) {
+        super();
+        this.idusuario = idusuario;
+        this.username = username;
+        this.nombreUsuario = nombreUsuario;
+        this.apellidoUsuario = apellidoUsuario;
+        this.contraseña = contraseña;
+        this.rol = rol;
+    }
+
+    public Long getIdusuario() {
 		return idusuario;
 	}
 	
