@@ -14,6 +14,7 @@ import javax.persistence.Table;
 public class Producto implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id_producto", nullable = false)
@@ -41,10 +42,9 @@ public class Producto implements Serializable {
 		
 	}
 
-	public Producto(Long idProducto, String nombreProducto, Double precio, String proveedor, String categoria,
+	public Producto(String nombreProducto, Double precio, String proveedor, String categoria,
             String descripcion, Boolean disponible) {
         super();
-        this.idProducto = idProducto;
         this.nombreProducto = nombreProducto;
         this.precio = precio;
         this.proveedor = proveedor;
@@ -53,14 +53,7 @@ public class Producto implements Serializable {
         this.disponible = disponible;
     }
 
-    public Long getIdProducto() {
-		return idProducto;
-	}
-
-	public void setIdProducto(Long idProducto) {
-		this.idProducto = idProducto;
-	}
-
+    
 	public String getNombreProducto() {
 		return nombreProducto;
 	}

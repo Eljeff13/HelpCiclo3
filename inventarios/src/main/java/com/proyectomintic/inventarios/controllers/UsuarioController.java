@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -30,14 +31,14 @@ public class UsuarioController {
 		return usuarioService.listarUsuario();
 	}
 	
-                                                                                //	@PostMapping("/crear")
-                                                                                //	public String crearUsuario(Model model) {
-                                                                                //	    Usuario nuevoUsuario = new Usuario();
-                                                                                //		model.addAttribute(nuevoUsuario, usuarioService.crearUsuario());
-                                                                                //		return "/usuario/crear";	
-                                                                                //	}
+//	@PostMapping("/crear")
+//	public String crearUsuario(Model model) {
+//	    Usuario nuevoUsuario = new Usuario();
+//		model.addAttribute(nuevoUsuario, usuarioService.crearUsuario());
+//		return "/usuario/crear";	
+//	}
                                                                                 	
-	@GetMapping("/crear")
+	@PutMapping("/crear")
 	public String CrearUsuario(@ModelAttribute Usuario usuario) {
 	    usuarioService.crearUsuario(usuario);
 	    return "usuario/vistaAdministradorUsuarios";

@@ -21,7 +21,7 @@ public class UsuarioService {
 	
 	public List<Usuario> listarUsuario(){
 		
-		return usuarioRepository.findAll();
+		return (List<Usuario>) usuarioRepository.findAll();
 	}
 	
 	public String crearUsuarioPorDTO(CreacionUsuarioDTO usuario) {

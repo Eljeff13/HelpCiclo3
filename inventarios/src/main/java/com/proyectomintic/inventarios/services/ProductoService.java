@@ -53,7 +53,6 @@ public class ProductoService {
 	public String modificacionProducto(ModificarProductoDTO recep) {
 		
 		Producto nuevaModificacion = new Producto();
-		nuevaModificacion.setIdProducto(recep.getIdProducto());
 		nuevaModificacion.setNombreProducto(recep.getNombreProducto());
 		nuevaModificacion.setPrecio(recep.getPrecio());
 		nuevaModificacion.setProveedor(recep.getProveedor());

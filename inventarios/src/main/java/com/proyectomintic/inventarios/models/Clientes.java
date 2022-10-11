@@ -27,7 +27,7 @@ public class Clientes implements Serializable {
 	@Column(name="apellidoCliente", nullable = false)
 	private String apellidoCliente;
 	
-	@Column(name="email", nullable = false)
+	@Column(name="email", nullable = false, unique = true)
 	private String email ;
 	
 	@Column(name="direccion", nullable = false)
