@@ -23,14 +23,14 @@ import com.proyectomintic.inventarios.models.DetallesFacturas;
 import com.proyectomintic.inventarios.services.detallesFacturas;
 
 @RestController
-@RequestMapping("/detallesfacturas")
+@RequestMapping("detallesfacturas")
 public class DetallesFacturasController {
     
     @Autowired
     private detallesFacturas detallesFacturasService;
     
     //Creamos nueva factura
-    @PostMapping
+    @PostMapping("/")
     public ResponseEntity<?> create (@RequestBody DetallesFacturas detallesFactura){
         return ResponseEntity.status(HttpStatus.CREATED).body(detallesFacturasService.Save(detallesFactura));
         
@@ -82,7 +82,7 @@ public class DetallesFacturasController {
     @GetMapping("/")
     public String listarProductos(Model model){
         model.addAttribute("productos", detallesFacturasService.findAll());
-        return "efectivo";
-                //"producto/vistaAdministradorProductos";  
+        return "producto/vistaAdministradorProductos";
+                
     }
 }

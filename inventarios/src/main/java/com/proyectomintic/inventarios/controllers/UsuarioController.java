@@ -1,5 +1,6 @@
 package com.proyectomintic.inventarios.controllers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,16 +20,16 @@ import com.proyectomintic.inventarios.DTO.CreacionUsuarioDTO;
 import com.proyectomintic.inventarios.models.Usuario;
 import com.proyectomintic.inventarios.services.UsuarioService;
 
-@Controller
-@RequestMapping("/usuario")
+@RestController
+@RequestMapping("usuario")
 public class UsuarioController {
 
 	@Autowired
 	private UsuarioService usuarioService;
 	
-	@GetMapping("/listar")
-	public List<Usuario> listarUsuario(){
-		return usuarioService.listarUsuario();
+	@GetMapping("/")
+	public ArrayList<Usuario> listarUsuario(){
+		return usuarioService.Obtenertodos();
 	}
 	
 //	@PostMapping("/crear")
@@ -40,7 +41,7 @@ public class UsuarioController {
                                                                                 	
 	@PutMapping("/crear")
 	public String CrearUsuario(@ModelAttribute Usuario usuario) {
-	    usuarioService.crearUsuario(usuario);
+	    usuarioService.Save(usuario);
 	    return "usuario/vistaAdministradorUsuarios";
 	}
 	
@@ -48,6 +49,6 @@ public class UsuarioController {
 	@DeleteMapping("/eliminar/{id}")
 	public String eliminarUsuario(@PathVariable Long id ) {
 		
-		return usuarioService.eliminarUsuario(id);
+		return usuarioService.deleteById(id);
 	}
 }

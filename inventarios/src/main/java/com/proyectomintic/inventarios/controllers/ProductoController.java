@@ -16,13 +16,13 @@ import com.proyectomintic.inventarios.DTO.ModificarProductoDTO;
 import com.proyectomintic.inventarios.services.ProductoService;
 
 @Controller
-@RequestMapping("/producto")
+@RequestMapping("producto")
 public class ProductoController {
 	
 	@Autowired
 	private ProductoService productoService;
 	
-	@GetMapping("/")
+	@GetMapping("/listar")
 	public String listarProductos(Model model){
 	    model.addAttribute("productos", productoService.listarProductos());
 	    return "producto/vistaAdministradorProductos";	

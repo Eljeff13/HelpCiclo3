@@ -19,7 +19,7 @@ import com.proyectomintic.inventarios.services.ClientesService;
 
 
 @RestController
-@RequestMapping("/Clientes")
+@RequestMapping("Clientes")
 public class ClientesController {
 	
 	@Autowired

@@ -17,7 +17,7 @@ import com.proyectomintic.inventarios.models.Factura;
 import com.proyectomintic.inventarios.services.FacturaService;
 
 @RestController
-@RequestMapping("/Factura")
+@RequestMapping("factura")
 public class FacturaController {
 
 	@Autowired
